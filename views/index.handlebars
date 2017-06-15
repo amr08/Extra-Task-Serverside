@@ -1,0 +1,25 @@
+<div class="container center-align">
+    <h1>New Releases</h1>
+</div>
+
+<div class="custom-container">
+    <div class="row">
+        {{#each results}}
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="http://image.tmdb.org/t/p/w300{{this.poster_path}}">
+                        <span class="card-title">{{this.title}}</span>
+                    </div>
+                    <div class="card-content">
+                        <p>{{this.overview}}</p>
+                        <p><strong>Release Date:</strong> {{this.release_date}}</p>
+                        <p><strong>Voter Average:</strong> {{this.vote_average}}</p>
+                    </div>
+                </div>
+            </div>
+        {{/each}} 
+    </div>
+</div>
+
+
